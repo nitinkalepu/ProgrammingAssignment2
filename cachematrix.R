@@ -19,11 +19,11 @@ makeCacheMatrix <- function(x = matrix())
                 # since the matrix is assigned a new value, flush the cache.
                 cache <<- NULL
         }
-        # returns the stored matrix.
+        # returns the stored matrix
         getMatrix <- function() {
                 x
         }
-        # cache the given argument.
+        # cache the given argument
         cacheInverse <- function(solve) {
                 cache <<- solve
         }
